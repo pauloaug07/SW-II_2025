@@ -10,12 +10,12 @@ $alunos = array(
 
 $totalNotas = 0;
 
-foreach ($alunos as $aluno) {
-    $totalNotas += $aluno;
+foreach ($alunos as $nota) {
+    $totalNotas += $nota;
 }
 
 $mediaNotas = $totalNotas / count($alunos);
 
-echo $mediaNotas;
+echo "A média de notas é: ". $mediaNotas;
  
 ?>

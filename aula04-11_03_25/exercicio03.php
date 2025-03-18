@@ -1,12 +1,19 @@
-<?php 
+<?php
 
-$numeros = array(3, 18, 1, 7, 4, 76, 23, 4);
+$numeros = array(22, 385, 7, 89, 23, 56, 3, 1);
 
-$maiorNum = 0;
-$menorNum = 0;
+$maior = $numeros[0];
+$menor = $numeros[0];
 
+foreach ($numeros as $num) {
+    if ($num > $maior) {
+        $maior = $num;
+    }
+    if ($num < $menor) {
+        $menor = $num;
+    }
+}
 
-
-echo $maiorNum;
-
+echo "Maior número: " . $maior  . "<br>";
+echo "Menor número: " . $menor;
 ?>
